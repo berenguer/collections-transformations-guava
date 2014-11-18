@@ -1,0 +1,6 @@
+1) Import project into Eclipse
+File -> Import -> General -> File System
+And choose the project directory "opl_spoon"
+
+2) Download Spoon and Guava librairies.
+Resolve dependency with eclipse
