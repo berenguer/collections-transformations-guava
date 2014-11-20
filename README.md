@@ -1,37 +1,47 @@
-M2 IAGL - OPL (OPTIMISATIONS POUR LOGICIEL)
-Subject : migrator JDK collections to Google Guave collections with Spoon
+M2 IAGL Lille 1 - OPL (OPTIMISATIONS POUR LOGICIEL)
 
-# -------------- AUTHORS -------------------
+Migrator of JDK collections to Google Guave, with Spoon
+====================
+
+Authors
+---------------------
 Maxime Chaste
 Pierre-Philippe Berenguer
 
-# ---------------- SPOON -------------------
+Spoon
+---------------------
+We assume you have some knowledges about Spoon.
+See :
 Spoon librairy : Java code analysis and transformation
-http://spoon.gforge.inria.fr/
+or
+[link](http://spoon.gforge.inria.fr/)
 
-# ---------------- GUAVA -------------------
-https://code.google.com/p/guava-libraries/
+Guava
+---------------------
+[link](https://code.google.com/p/guava-libraries/)
 
-# ------------- EXPLANATIONS ---------------
+Overview
+---------------------
 rapport.pdf
+	presentation of the project
 
-# --------------- OVERVIEW -----------------
-
-/opl_spoon
+*/opl_spoon*
 	project parent directory
 
-	/input
-		simple class files used to be input to the Spoon.Launcher;
-		they offer us to check transformations manually : comparing originals to spooned ones
-	/processor
+	*/input*
+		simple class files used as input to the Spoon.Launcher;
+	*/processor*
 		package
-			Contains CtVariableProcessorDispatcher.class. It is the Spoon Processor for CtVariable (Spoon).
-			It dispatch transformation to different Replacer.
+			* contains CtVariableProcessorDispatcher.class. It is the Spoon Processor for CtVariable (Spoon object).
+			* it dispatch transformations to different Replacer objects.
+			* a Replacer transform an unique specific JDK object (list, arraylist...)
 
-			PatternProcessor.class is the first attempt to transform multiple add(object) consecutiv for an array, into one line
-	/spooned
-		result of transformation when running our Processor with Spoon
-	/src
+			* PatternProcessor is the first attempt to transform multiple lines of code using an object from collection.
+			only "add(object)" as consecutive invocations for an array. All "add" invocations are replace by only one line invocation.
+			
+	*/spooned*
+		result of transformation when running our Spoon Processor
+	*/src*
 		empty : just for satisfy eclipse
 	
 	
