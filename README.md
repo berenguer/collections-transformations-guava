@@ -5,21 +5,18 @@ Migrator of JDK collections to Google Guave, with Spoon
 
 Authors
 ---------------------
-Maxime Chaste
+Maxime Chaste  
 Pierre-Philippe Berenguer
 
 Spoon
 ---------------------
-We assume you have some knowledges about Spoon.
-See :
-Spoon librairy : Java code analysis and transformation
-or
-[forge spoon](http://spoon.gforge.inria.fr/)
+We assume you have some knowledges about Spoon.  
+See Spoon librairy : Java code analysis and transformation on
+[forge spoon](http://spoon.gforge.inria.fr/).
 
 Guava
 ---------------------
-Collections from Google.
-[Guava librairies](https://code.google.com/p/guava-libraries/)
+Collections from Google: [Guava librairies](https://code.google.com/p/guava-libraries/)
 
 Overview
 ---------------------
