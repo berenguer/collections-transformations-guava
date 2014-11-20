@@ -14,19 +14,17 @@ We assume you have some knowledges about Spoon.
 See :
 Spoon librairy : Java code analysis and transformation
 or
-[link](http://spoon.gforge.inria.fr/)
+[forge spoon](http://spoon.gforge.inria.fr/)
 
 Guava
 ---------------------
-[link](https://code.google.com/p/guava-libraries/)
+Collections from Google.
+[Guava librairies](https://code.google.com/p/guava-libraries/)
 
 Overview
 ---------------------
 rapport.pdf
 	presentation of the project
-
-*/opl_spoon*
-	project parent directory
 
 	*/input*
 		simple class files used as input to the Spoon.Launcher;
